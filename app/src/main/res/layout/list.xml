@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<android.support.v7.widget.CardView
+    app:contentPadding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardElevation="10dp">
+    <RelativeLayout
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:layout_alignParentStart="true"
+
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/icon_name"
+
+            android:layout_alignParentLeft="true"
+            android:id="@+id/imageView" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginLeft="57dp"
+            android:layout_marginStart="57dp">
+
+
+
+
+            <LinearLayout
+                android:id="@+id/name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#0e439e"
+
+                    android:id="@+id/nameholder"
+                    android:layout_alignParentLeft="true"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/name2"
+                android:layout_below="@+id/name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:id="@+id/rollnumholder"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#b90b0b"
+
+                    android:layout_marginRight="10dp"
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
